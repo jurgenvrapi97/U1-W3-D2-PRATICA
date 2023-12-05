@@ -253,18 +253,14 @@ console.log('contiente n:' + film())
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
-const filmsName = []
-const titolo = movies.map((nome, Title) => filmsName.push(nome[Title]))
 
-console.log(filmsName)
+const titolo = movies.map(({ Title }) => ({ Title }))
+
+console.log(titolo)
 
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
-
-const result = movies.filter((Year, string) => string >= '2000')
-
-console.log(result)
 
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
