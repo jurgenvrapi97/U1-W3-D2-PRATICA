@@ -262,6 +262,12 @@ console.log(titolo)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 
+const filtroAnno = movies.filter(function (movie) {
+  return movie.Year >= '2000'
+})
+
+console.log(filtroAnno)
+
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
